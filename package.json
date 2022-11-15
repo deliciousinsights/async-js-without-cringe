@@ -2,7 +2,7 @@
   "name": "async-js-without-cringe",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base=/async-js-without-cringe",
     "dev": "slidev --open",
     "export": "slidev export"
   },

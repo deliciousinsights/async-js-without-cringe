@@ -470,12 +470,12 @@ http.interceptors.response.use(
 
 # En résumé…
 
-- `async` / `await` is vastly better than manual promise chains
-- `await` _suspends_, it does not _block_.
-- `await` is only possible at module top-level (Top-Level Await, or TLA) or in the immediate body of an `async` function.
-- Any function can be `async`.
-- Async functions implicitly use promise wrapping.
-- There is no reason to `return await` outside a `try…catch`
+- `async` / `await` est **nettement supérieur** aux chaînes manuelles
+- `await` _suspend_, il ne _bloque_ pas.
+- `await` est possible en racine de module (_Top-Level Await_, ou TLA) et dans le corps immédiat d'une fonction `async`.
+- Toute fonction peut être `async`.
+- Les fonctions `async` enrobent implicitement leurs corps comme promesse.
+- Tu ne devrais jamais faire un `return await` (ou équivalent) hors d'un `try…catch`
 
 ---
 layout: center
