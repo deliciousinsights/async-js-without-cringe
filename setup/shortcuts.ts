@@ -10,6 +10,10 @@ export default defineShortcutsSetup(
         key: 'home',
         fn: () => nav.goFirst(),
       },
+      {
+        key: 'end',
+        fn: () => nav.goLast(),
+      },
     ]
   }
 )

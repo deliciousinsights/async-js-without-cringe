@@ -520,6 +520,8 @@ background: /jeshoots-com--2vD8lIhdnw-unsplash.jpg
 
 Cette présentation est sur [`bit.ly/async-js-no-cringe`](https://bit.ly/async-js-no-cringe).
 
+[`@porteneuve`](https://twitter.com/porteneuve) / [`@DelicioInsights`](https://twitter.com/DelicioInsights) / [YouTube](https://youtube.com/c/DeliciousInsights)
+
 </div>
 
 <div class="mt-12 text-sm" style="opacity: 0.5">
