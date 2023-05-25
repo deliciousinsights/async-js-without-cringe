@@ -11,7 +11,7 @@ favicon: https://delicious-insights.com/apple-touch-icon.png
 info: |
   ## L’asynchrone en JS sans le cringe
 
-  Une présentation de Christophe Porteneuve à [Codeurs en Seine 2022](https://www.codeursenseine.com/2022).
+  Une présentation de Christophe Porteneuve à [DevFest Lille 2023](https://devfest.gdglille.org/).
 
   Envie de plus ? Notre [chaîne YouTube](https://www.youtube.com/c/DeliciousInsights) et nos [super formations](https://delicious-insights.com/fr/formations/) sont pour toi !
 drawings:
@@ -22,7 +22,7 @@ css: unocss
 
 # L’asynchrone en JS<br/>sans le cringe
 
-Une présentation de Christophe Porteneuve à [Codeurs en Seine 2022](https://www.codeursenseine.com/2022)
+Une présentation de Christophe Porteneuve à [DevFest Lille 2023](https://devfest.gdglille.org/)
 
 ---
 
@@ -33,7 +33,7 @@ const christophe = {
   family: { wife: 'Élodie', sons: ['Maxence', 'Elliott'] },
   city: 'Paris, FR',
   company: 'Delicious Insights',
-  trainings: ['Web Apps Modernes', 'Node.js', 'ES Total'],
+  trainings: ['TypeScript', 'React PWA', 'Node.js', 'ES Total'],
   jsSince: 1995,
   claimsToFame: [
     'Prototype.js',
@@ -348,7 +348,7 @@ async function deleteUser(req, res) {
 
 C'est une variante « moins grave » du mélange des styles, mais c'est quand même _so 2015_.  Je suis tombé sur ce clusterfuck récemment :
 
-```js {all|3-4|5-7}
+```js {all|2-4|5-7|3-7}
 export function findAllUsers(query) {
   …
   return User.findAndCountAll(…)
@@ -359,15 +359,17 @@ export function findAllUsers(query) {
 }
 ```
 
-- Il y a un risque de double mode d’erreur (synchrone et asynchrone).
-- Ce `catch` est aussi utile que la H de Hawaï.
-- Les chaînes de promesses restent plus dures à orchestrer (pas de structures de contrôle).
+<ul>
+  <li v-click=1>Il y a un risque de <strong>double mode d’erreur</strong> (synchrone et asynchrone).</li>
+  <li v-click=2>Ce <code>catch</code> est aussi utile que le H de Hawaï.</li>
+  <li v-click=3>Les chaînes de promesses restent <strong>plus dures à orchestrer</strong> (pas de structures de contrôle).</li>
+</ul>
 
 ---
 
 # Aparté : _scope juggling_ dans une chaîne manuelle
 
-```js {all|2,6|3,10|14|all}
+```js {all|2,6|3,10|2,3,13,14|all}
 function getUsersLastPost(userId) {
   let user
   let post
@@ -398,7 +400,7 @@ export async function findAllUsers(query) {
   return ensureAtLeastOne(await User.findAndCountAll())
 }
 
-// Sans doute optimisable par eger-loading, mais c'est un autre sujet,
+// Sans doute optimisable par eager-loading, mais c'est un autre sujet,
 // et on ne fait pas de N+1 en plus ici, alors bon.
 async function getUsersLastPost(userId) {
   const user = await User.findByPk(userId)
@@ -485,7 +487,7 @@ layout: center
 
 On est sympas.
 
-Chez [Delicious Insights](https://delicious-insights.com/), on fait des **[formations](https://delicious-insights.com/fr/formations/) qui déchirent tout**, notamment sur [100% de JS pur](https://delicious-insights.com/fr/formations/es-total/), [React et les PWA](https://delicious-insights.com/fr/formations/web-apps-modernes/), [Node.js](https://delicious-insights.com/fr/formations/node-js/) et [Git](https://delicious-insights.com/fr/formations/git-total/).
+Chez [Delicious Insights](https://delicious-insights.com/fr/), on fait des **[formations](https://delicious-insights.com/fr/formations/) qui déchirent tout**, notamment sur [TypeScript](https://delicious-insights.com/fr/formations/typescript/), [100% de JS pur](https://delicious-insights.com/fr/formations/es-total/), [React et les PWA](https://delicious-insights.com/fr/formations/web-apps-modernes/), [Node.js](https://delicious-insights.com/fr/formations/node-js/) et [Git](https://delicious-insights.com/fr/formations/git-total/).
 
 _(Franchement, elles envoient du bois.)_
 
@@ -495,11 +497,42 @@ On peut aussi venir [gronder ton archi / ta codebase](https://delicious-insights
 À côté de ça, tu devrais **carrément** t'abonner à notre fabuleuse [chaîne YouTube](), qui déborde de tutos, cours, livestreams, talks en conférences, etc. et c'est évidemment **gratuit** !
 
 ---
+layout: center
+---
+
+# Budget très très serré ?
+
+<div style="display: flex; gap: 2rem; align-items: flex-start;">
+
+<div>
+
+On a une super nouvelle pour toi.  D'ailleurs, je l'annonce *en exclusivité mondiale™* ici à DevFest Lille. 🤘🏻
+
+<v-clicks>
+
+On lance aujourd'hui nos **workshops** : des remixes du meilleur de nos formations sur une seule journée, 100% en ligne et hyper vivants, interactifs et fun, à des **prix extrêmement réduits**, avec jusqu'à 40 personnes.
+
+Ça commence le **13 juillet** prochain, avec notre workshop [**JS Masterclass**](https://bit.ly/js-masterclass) : les parties les plus utiles de notre formation ES Total, à 🎁 **249 € TTC** 🤩 seulement (la formation, sur 3 jours, coûte 1 500 € HT).
+
+Et **jusqu'au 10 juin**, tarif de lancement à **199 € TTC** ! 😍
+
+Tous les détails sont sur [`bit.ly/js-masterclass`](https://bit.ly/js-masterclass).
+
+Réserve ta place dès maintenant, ça va être une énorme tuerie !
+
+</v-clicks>
+</div>
+
+<a v-click='2' href="<https://bit.ly/js-masterclass>" style="height: 100%;"><img src="/js-masterclass-og.png" alt="" style="border-radius: 0.5rem"/></a>
+
+</div>
+
+---
 layout: cover
 background: /jeshoots-com--2vD8lIhdnw-unsplash.jpg
 ---
 
-# Merci
+# Merci ! 🤗
 
 .
 
@@ -514,9 +547,9 @@ background: /jeshoots-com--2vD8lIhdnw-unsplash.jpg
 
 <div class="feedback">
 
-[![](/qrcode.png)](https://openfeedback.io/x5awOPdysqXGeNQdG9Ww/2022-11-17/8Hh7YXj9LYJuN3jAxjQk)
+[![](/qrcode.png)](https://openfeedback.io/lSG3Xl5ALpXqswcFPcu2/2023-05-26/5pxZVKMEvMJrKkipl2CD)
 
-[Laisse tes impressions ici !](https://openfeedback.io/x5awOPdysqXGeNQdG9Ww/2022-11-17/8Hh7YXj9LYJuN3jAxjQk)  Ça ne prend qu'un instant.
+[Laisse tes impressions ici !](https://openfeedback.io/lSG3Xl5ALpXqswcFPcu2/2023-05-26/5pxZVKMEvMJrKkipl2CD)  Ça ne prend qu'un instant.
 
 Cette présentation est sur [`bit.ly/async-js-no-cringe`](https://bit.ly/async-js-no-cringe).
 
