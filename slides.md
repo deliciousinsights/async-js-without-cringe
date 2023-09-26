@@ -11,7 +11,7 @@ favicon: https://delicious-insights.com/apple-touch-icon.png
 info: |
   ## L’asynchrone en JS sans le cringe
 
-  Une présentation de Christophe Porteneuve à [DevFest Lille 2023](https://devfest.gdglille.org/).
+  Une présentation de Christophe Porteneuve
 
   Envie de plus ? Notre [chaîne YouTube](https://www.youtube.com/c/DeliciousInsights) et nos [super formations](https://delicious-insights.com/fr/formations/) sont pour toi !
 drawings:
@@ -22,7 +22,7 @@ css: unocss
 
 # L’asynchrone en JS<br/>sans le cringe
 
-Une présentation de Christophe Porteneuve à [DevFest Lille 2023](https://devfest.gdglille.org/)
+Une présentation de Christophe Porteneuve
 
 ---
 
@@ -480,54 +480,6 @@ http.interceptors.response.use(
 - Tu ne devrais jamais faire un `return await` (ou équivalent) hors d'un `try…catch`
 
 ---
-layout: center
----
-
-# Viens nous voir !
-
-On est sympas.
-
-Chez [Delicious Insights](https://delicious-insights.com/fr/), on fait des **[formations](https://delicious-insights.com/fr/formations/) qui déchirent tout**, notamment sur [TypeScript](https://delicious-insights.com/fr/formations/typescript/), [100% de JS pur](https://delicious-insights.com/fr/formations/es-total/), [React et les PWA](https://delicious-insights.com/fr/formations/web-apps-modernes/), [Node.js](https://delicious-insights.com/fr/formations/node-js/) et [Git](https://delicious-insights.com/fr/formations/git-total/).
-
-_(Franchement, elles envoient du bois.)_
-
-On peut aussi venir [gronder ton archi / ta codebase](https://delicious-insights.com/fr/services/) (mais gentiment), voire réaliser tes **preuves de concept** pour toi, en mode pas jetable du tout™.
-
-
-À côté de ça, tu devrais **carrément** t'abonner à notre fabuleuse [chaîne YouTube](), qui déborde de tutos, cours, livestreams, talks en conférences, etc. et c'est évidemment **gratuit** !
-
----
-layout: center
----
-
-# Budget très très serré ?
-
-<div style="display: flex; gap: 2rem; align-items: flex-start;">
-
-<div>
-
-On a une super nouvelle pour toi.  D'ailleurs, je l'annonce *en exclusivité mondiale™* ici à DevFest Lille. 🤘🏻
-
-<v-clicks>
-
-On lance aujourd'hui nos **workshops** : des remixes du meilleur de nos formations sur une seule journée, 100% en ligne et hyper vivants, interactifs et fun, à des **prix extrêmement réduits**, avec jusqu'à 40 personnes.
-
-Ça commence le **13 juillet** prochain, avec notre workshop [**JS Masterclass**](https://bit.ly/js-masterclass) : les parties les plus utiles de notre formation ES Total, à 🎁 **249 € TTC** 🤩 seulement (la formation, sur 3 jours, coûte 1 500 € HT).
-
-Et **jusqu'au 10 juin**, tarif de lancement à **199 € TTC** ! 😍
-
-Tous les détails sont sur [`bit.ly/js-masterclass`](https://bit.ly/js-masterclass).
-
-Réserve ta place dès maintenant, ça va être une énorme tuerie !
-
-</v-clicks>
-</div>
-
-<a v-click='2' href="<https://bit.ly/js-masterclass>" style="height: 100%;"><img src="/js-masterclass-og.png" alt="" style="border-radius: 0.5rem"/></a>
-
-</div>
-
----
 layout: cover
 background: /jeshoots-com--2vD8lIhdnw-unsplash.jpg
 ---
@@ -546,10 +498,6 @@ background: /jeshoots-com--2vD8lIhdnw-unsplash.jpg
 </style>
 
 <div class="feedback">
-
-[![](/qrcode.png)](https://openfeedback.io/lSG3Xl5ALpXqswcFPcu2/2023-05-26/5pxZVKMEvMJrKkipl2CD)
-
-[Laisse tes impressions ici !](https://openfeedback.io/lSG3Xl5ALpXqswcFPcu2/2023-05-26/5pxZVKMEvMJrKkipl2CD)  Ça ne prend qu'un instant.
 
 Cette présentation est sur [`bit.ly/async-js-no-cringe`](https://bit.ly/async-js-no-cringe).
 
